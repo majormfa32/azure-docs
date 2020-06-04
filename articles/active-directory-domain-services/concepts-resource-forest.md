@@ -36,6 +36,9 @@ In an Azure AD DS *resource* forest, users authenticate over a one-way forest *t
 
 Resource forests also provide the capability to lift-and-shift your applications one component at a time. Many legacy on-premises applications are multi-tiered, often using a web server or front end and many database-related components. These tiers make it hard to lift-and-shift the entire application to the cloud in one step. With resource forests, you can lift your application to the cloud in phased approach, which makes it easier to move your application to Azure.
 
+> [!IMPORTANT]
+> A Resource forest only synchronizes users and groups created directly in Azure AD.
+
 ## What are trusts?
 
 Organizations that have more than one domain often need users to access shared resources in a different domain. Access to these shared resources requires that users in one domain authenticate to another domain. To provide these authentication and authorization capabilities between clients and servers in different domains, there must be a *trust* between the two domains.
